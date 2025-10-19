@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Darapu Tejeswara Rao - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {margin:0; font-family:'Inter', sans-serif; background:#0a0f20; color:#fff; scroll-behavior:smooth;}
+    nav {position:fixed; top:0; width:100%; background:rgba(10,15,32,0.95); box-shadow:0 4px 20px rgba(0,0,0,0.5); z-index:1000; display:flex; justify-content:center; padding:16px 0; transition:0.3s;}
+    nav a {margin:0 20px; font-weight:600; color:#00d4ff; transition:0.3s; text-transform:uppercase; letter-spacing:0.5px;}
+    nav a:hover {color:#00ffa5;}
+    header {background:linear-gradient(135deg, #0b74de, #1a9fff); color:#fff; padding:100px 20px; text-align:center; border-bottom-left-radius:40% 10%; border-bottom-right-radius:40% 10%; position:relative; overflow:hidden;}
+    header::after {content:''; position:absolute; width:100%; height:100%; top:0; left:0; background:radial-gradient(circle at center, rgba(255,255,255,0.1), transparent); animation:rotateBG 20s linear infinite;}
+    @keyframes rotateBG {0% {transform:rotate(0deg);} 100% {transform:rotate(360deg);}}
+    header img {width:160px; height:160px; border-radius:50%; border:5px solid #fff; margin-bottom:20px; transition: transform 0.6s, box-shadow 0.6s;}
+    header img:hover {transform: scale(1.15) rotate(5deg); box-shadow:0 15px 40px rgba(0,0,0,0.5);}
+    header h1 {margin:0; font-size:42px; font-weight:700;}
+    header p {margin:8px 0; font-size:18px; color:#d0e4ff;}
+    header a {display:inline-block; margin-top:14px; padding:12px 26px; border-radius:10px; background:#00d4ff; color:#0a0f20; font-weight:700; text-decoration:none; transition:0.3s;}
+    header a:hover {background:#00ffa5; color:#0a0f20;}
+    .container {max-width:1200px; margin:0 auto; padding:80px 20px;}
+    section {margin-bottom:80px;}
+    h2 {font-size:32px; border-bottom:4px solid #00d4ff; padding-bottom:10px; margin-bottom:35px; color:#00d4ff;}
+    p, li {line-height:1.9; font-size:17px;}
+    ul {padding-left:24px;}
+    .skills span {display:inline-block; background:#111a33; color:#00d4ff; padding:12px 20px; border-radius:35px; margin:6px 10px 6px 0; font-weight:700; cursor:pointer; transition:0.4s;}
+    .skills span:hover {background:#00d4ff; color:#0a0f20; transform:scale(1.1);}
+    .projects .card {background:#111a33; border-radius:18px; padding:28px; margin-bottom:25px; transition:0.6s; border-left:4px solid #00d4ff;}
+    .projects .card:hover {box-shadow:0 20px 50px rgba(0,212,255,0.5); transform: translateY(-8px);}
+    .portfolio-images {display:flex; flex-wrap:wrap; gap:22px; margin-top:25px;}
+    .portfolio-images img {width:calc(50% - 11px); border-radius:18px; border:2px solid #00d4ff; transition:0.5s;}
+    .portfolio-images img:hover {transform: scale(1.12) rotate(-3deg); box-shadow:0 15px 40px rgba(0,212,255,0.5);}
+    footer {text-align:center; padding:50px; font-size:16px; color:#666; border-top:2px solid #00d4ff; background:#0a0f20;}
+    @media(max-width:720px) {.portfolio-images img {width:100%;} nav {flex-wrap:wrap;}}  
+    .skill-bar {position:relative; background:#111a33; border-radius:25px; margin:10px 0; height:25px;}
+    .skill-bar span {position:absolute; display:block; height:100%; border-radius:25px; background:#00d4ff; line-height:25px; padding-left:15px; color:#0a0f20; font-weight:600; animation:loadBar 2s ease forwards;}
+    @keyframes loadBar {0% {width:0;} 100% {width:var(--skill-width);} }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#internship">Internship</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <img src="https://i.postimg.cc/pVJk152X/unnamed-11.png" alt="Tejeshwar photo">
+    <h1>Darapu Tejeswara Rao</h1>
+    <p>B.Tech (ECE) | Specialization: Internet of Things (IoT)</p>
+    <p>VLSI Intern @ CODTECH IT SOLUTIONS | YouTube: Motivated Muscles</p>
+    <a href="https://www.linkedin.com/in/darapu-tejeswara-rao-423984386" target="_blank">LinkedIn Profile</a>
+  </header>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a highly motivated B.Tech student in Electronics & Communication Engineering, specializing in IoT and VLSI. I bridge theoretical knowledge with real-world applications and excel in analog & digital electronics, embedded systems, and logic design. I focus on practical learning through internships, labs, and innovative projects.</p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>B.Tech — Electronics & Communication Engineering</strong>, College Name (Year)</p>
+      <p><strong>Specialization:</strong> Internet of Things (IoT)</p>
+    </section>
+
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <span>Analog Electronics</span>
+        <span>Digital Electronics</span>
+        <span>C Programming</span>
+        <span>Control Systems</span>
+        <span>Communication Systems</span>
+        <span>VLSI Design</span>
+        <span>Embedded / IoT</span>
+      </div>
+      <div class="skill-bar" style="--skill-width:90%;"><span style="width:0;">Analog Electronics 90%</span></div>
+      <div class="skill-bar" style="--skill-width:85%;"><span style="width:0;">Digital Electronics 85%</span></div>
+      <div class="skill-bar" style="--skill-width:80%;"><span style="width:0;">C Programming 80%</span></div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projects & Mini Projects</h2>
+      <div class="card">
+        <strong>IoT-based Water Level Monitoring System</strong>
+        <p>Implemented a real-time water level monitoring system using ultrasonic sensors and ESP module, featuring live dashboard alerts and mobile notifications.</p>
+      </div>
+      <div class="card">
+        <strong>VLSI Timing Analysis & Layout Practice</strong>
+        <p>Performed flip-flop timing analysis and layout design during VLSI internship, learning clock skew, propagation delay, and optimization techniques.</p>
+      </div>
+      <div class="card">
+        <strong>C Programming Mini Project</strong>
+        <p>Developed a CLI tool for algorithmic challenges including string manipulation, file handling, and basic data structures.</p>
+      </div>
+    </section>
+
+    <section id="internship">
+      <h2>Internship</h2>
+      <p><strong>CODTECH IT SOLUTIONS PVT. LTD.</strong> — 8-week VLSI Internship (May 30, 2025 — July 30, 2025). Gained practical experience in layout design, timing analysis, and VLSI lab exercises.</p>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications & Courses</h2>
+      <ul>
+        <li>Python Certification — SWAYAM</li>
+        <li>Additional certifications can be added here</li>
+      </ul>
+    </section>
+
+    <section id="extracurricular">
+      <h2>Extracurricular Activities</h2>
+      <p>Fitness enthusiast with regular gym routine, YouTube content creator at <strong>Motivated Muscles</strong>, and active on LinkedIn sharing ECE & IoT insights.</p>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio Highlights</h2>
+      <div class="portfolio-images">
+        <img src="https://i.postimg.cc/pVJk152X/unnamed-11.png" alt="Project Image 1">
+        <img src="https://i.postimg.cc/9rL0ZP6Z/" alt="Project Image 2">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <strong>example@email.com</strong></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/darapu-tejeswara-rao-423984386" target="_blank">darapu-tejeswara-rao</a></p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Darapu Tejeswara Rao | Modern & Interactive Portfolio
+  </footer>
+
+</body>
+</html>
